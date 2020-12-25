@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="cal.css">
+    <script src="calj.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <form name="sci-calc">
+            <h2>SCIENTIFIC CALCULATOR</h2>
+            <table cellspacing="0" cellpadding="1">
+                <tr>
+                    <td COLSPAN="5" ALIGN="center"><input NAME="display" class="textview" VALUE="0" SIZE="44" MAXLENGTH="25"></td>
+                </tr>
+                <tr>
+                    
+                </tr>
+                <tr>
+                    <td align="center"><input type="button" class="button function" value="exp" ONCLICK="if (checkNum(this.form.display.value)) { exp(this.form) }"></td>
+                    <td align="center"><input type="button" class="button gray number" value="7" ONCLICK="addChar(this.form.display, '7')"></td>
+                    <td align="center"><input type="button" class="button gray number" value="8" ONCLICK="addChar(this.form.display, '8')"></td>
+                    <td align="center"><input type="button" class="button gray number" value="9" ONCLICK="addChar(this.form.display, '9')"></td>
+                    <td align="center"><input type="button" class="button symbol" value="/" ONCLICK="addChar(this.form.display, '/')"></td>
+                </tr>
+                <tr>
+                    <td align="center"><input type="button" class="button function" value="  ln   " ONCLICK="if (checkNum(this.form.display.value)) { ln(this.form) }"></td>
+                    <td align="center"><input type="button" class="button gray number" value="4" ONCLICK="addChar(this.form.display, '4')"></td>
+                    <td align="center"><input type="button" class="button gray number" value="5" ONCLICK="addChar(this.form.display, '5')"></td>
+                    <td align="center"><input type="button" class="button gray number" value="6" ONCLICK="addChar(this.form.display, '6')"></td>
+                    <td align="center"><input type="button" class="button symbol" value="*" ONCLICK="addChar(this.form.display, '*')"></td>
+                </tr>
+                <tr>
+                    <td align="center"><input type="button" class="button function" value="√" ONCLICK="if (checkNum(this.form.display.value)) { sqrt(this.form) }"></td>
+                    <td align="center"><input type="button" class="button gray number" value="1" ONCLICK="addChar(this.form.display, '1')"></td>
+                    <td align="center"><input type="button" class="button gray number" value="2" ONCLICK="addChar(this.form.display, '2')"></td>
+                    <td align="center"><input type="button" class="button gray number" value="3" ONCLICK="addChar(this.form.display, '3')"></td>
+                    <td align="center"><input type="button" class="button symbol" value="-" ONCLICK="addChar(this.form.display, '-')"></td>
+                </tr>
+                <tr>
+                    <td align="center"><input type="button" class="button function" value="a² " ONCLICK="if (checkNum(this.form.display.value)) { square(this.form) }"></td>
+                    <td align="center"><input type="button" class="button symbol" value="+/-" ONCLICK="changeSign(this.form.display)"></td>
+                    <td align="center"><input type="button" class="button gray number" value="0" ONCLICK="addChar(this.form.display, '0')"></td>
+                    <td align="center"><input type="button" class="button symbol" value="." ONCLICK="addChar(this.form.display, '.')"></td>
+                    <td align="center"><input type="button" class="button symbol" value="+" ONCLICK="addChar(this.form.display, '+')"></td>
+                </tr>
+
+                <tr>
+                    <td align="center"><input type="button" class="button symbol" value="&#960;" onclick="addChar(this.form.display,'3.14159265359')"></td>
+                    <td align="center"><input type="button" class="button symbol" value="%" onclick=" percent(this.form.display)"></td>
+                    <td align="center"><input type="button" class="button function" value="cos" ONCLICK="if (checkNum(this.form.display.value)) { cos(this.form) }"></td>
+                    <td align="center"><input type="button" class="button function" value="sin" ONCLICK="if (checkNum(this.form.display.value)) { sin(this.form) }"></td>
+                    <td align="center"><input type="button" class="button function" value="tan" ONCLICK="if (checkNum(this.form.display.value)) { tan(this.form) }"></td>
+
+
+                </tr>
+                <tr>
+                    <td align="center"><input type="button" class="button symbol" value="(" ONCLICK="addChar(this.form.display, '(')"></td>
+                    <td align="center"><input type="button" class="button symbol" value=")" ONCLICK="addChar(this.form.display, ')')"></td>
+                    <td align="center"><input type="button" class="button red prime" value="Clear" ONCLICK="this.form.display.value = 0 "></td>
+                    <td align="center"><input type="button" class="button red prime" value="⌫" ONCLICK="deleteChar(this.form.display)"></td>
+                    <td align="center"><input type="button" class="button blue equals" value="=" NAME="Enter" ONCLICK="if (checkNum(this.form.display.value)) { compute(this.form) }"></td>
+                </tr>
+
+
+
+            </table>
+        </form>
+    </div>
+</body>
+</html>

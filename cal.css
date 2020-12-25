@@ -1,0 +1,93 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.button {
+    width: 100px;
+    height: 100px;
+    font-size: 25px;
+    margin: 20px;
+    cursor: pointer;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.textview {
+    width: 500px;
+    height: 100px;
+    font-size: 50px;
+    padding: 15px;
+    margin: 5px;
+    border: 10px solid;
+    background-color: white;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+h2 {
+    text-align: center;
+    width: 560px;
+    height: 50px;
+    font-size: 35px;
+    padding-top: 20px;
+    padding-left: 5px;
+}
+
+.main {
+    width: 570px;
+    height: 905px;
+    background-color: #efecec;
+    position: absolute;
+    border: 1px solid gray;
+    margin-left: 650px;
+    margin-top: 50px;
+}
+
+.number {
+    background-color: white;
+    font-weight: bold;
+}
+
+.symbol {
+    background-color: black;
+    color: white;
+}
+
+.function {
+    background-color: black;
+    color: white;
+    
+}
+
+.function:hover{
+    background-color: coral;
+}
+
+.symbol:hover{
+    background-color: coral;
+}
+
+.equals {
+    background-color: #ffc421;
+}
+
+.prime {
+    background-color: #ffc421;
+}
+
+.gray:hover {
+    background-color: #e0e0e0;
+}
+
+.blue:hover {
+    background-color: #03a9f4;
+}
+
+.red:hover {
+    background-color: red;
+}
